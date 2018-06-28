@@ -30,6 +30,8 @@ public class MotorTest1_SlowWhenButtonPressed extends LinearOpMode {
             }
 
             motor1.setPower(speed2);
+
+            telemetry.addData("Motor", ""+speed2);
         }
     }
 }
