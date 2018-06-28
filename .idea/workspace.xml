@@ -2,325 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc6a1539-e4e9-46ed-b186-7c0f078edf34" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/CarroOmnidireccional.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/CarrroOmnidireccional_1Joystick.java" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" afterPath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/debug/com/qualcomm/ftcrobotcontroller/BuildConfig.java" afterPath="$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/debug/com/qualcomm/ftcrobotcontroller/BuildConfig.java" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/attr/R.txt" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/attr/R.txt" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/R.txt" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/R.txt" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values-w820dp-v13/values-w820dp-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values-w820dp-v13/values-w820dp-v13.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values/values.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/FtcRobotController/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/TeamCode.iml" afterPath="$PROJECT_DIR$/TeamCode/TeamCode.iml" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/generated/source/r/debug/org/firstinspires/ftc/teamcode/R.java" afterPath="$PROJECT_DIR$/TeamCode/build/generated/source/r/debug/org/firstinspires/ftc/teamcode/R.java" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/debug.json" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values-sw720dp-land-v13.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values-sw720dp-land-v13.json" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values-v11.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values-v11.json" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values-v14.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values-v14.json" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values-w820dp-v13.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values-w820dp-v13.json" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/multi-v2/values.json" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/blame/res/debug/single/debug.json" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$array.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$array.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$attr.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$attr.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$color.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$dimen.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$dimen.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$drawable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$id.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$layout.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$menu.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$menu.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$raw.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$raw.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$style.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$styleable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$styleable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$xml.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/google/blocks/R$xml.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/WirelessP2p/R$color.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/WirelessP2p/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/WirelessP2p/R$style.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/WirelessP2p/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$array.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$array.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$attr.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$attr.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$color.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$dimen.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$dimen.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$drawable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$id.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$layout.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$menu.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$menu.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$raw.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$raw.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$style.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$styleable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$styleable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$xml.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftccommon/R$xml.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$array.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$array.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$attr.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$attr.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$color.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$dimen.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$dimen.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$drawable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$id.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$layout.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$menu.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$menu.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$raw.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$raw.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$style.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$styleable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$styleable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$xml.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/ftcrobotcontroller/R$xml.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$array.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$array.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$attr.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$attr.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$color.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$drawable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$id.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$layout.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$raw.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$raw.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$style.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$styleable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/hardware/R$styleable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$array.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$array.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$attr.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$attr.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$color.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$drawable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$id.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$layout.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$raw.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$raw.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$style.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$styleable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/com/qualcomm/robotcore/R$styleable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$array.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$array.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$attr.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$attr.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$color.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$dimen.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$dimen.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$drawable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$id.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$layout.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$menu.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$menu.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$raw.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$raw.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$string.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$style.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$styleable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$styleable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$xml.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R$xml.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/R.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$array.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$array.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$attr.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$attr.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$color.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$dimen.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$dimen.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$drawable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$id.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$layout.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$menu.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$menu.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$raw.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$raw.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$style.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$styleable.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/inspection/R$styleable.class" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6Fjz4WuoAc2zh8qrKV0SvgfLlBM=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9TkLWP+RppMQNyVBd_yqL56WyLA=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/BJx9+rEF9CQVCAzH1e1EaWm8IIQ=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Hw0Capegj+Mbsyojhu_s0fClDPA=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/JnKVf9zISkuzrOBU63256YSAjh4=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/KyX05bix1OnL7WbLmIcYHfAlPqA=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Mcdu+EjwrU9Ylx1ci0bnaqiJ8uM=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/g9SeduUsQ91fuxanJg0cVLR0XPo=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/CarroOmnidireccional.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/CarroOmnidireccional.class" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/Prueba_LuisDaniel.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/k9roeL4vyP8g6nbIHgb2hg3drqw=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/lMzxkPMRzhXowOHnE7n73leJ9lI=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/sBtpLNgJ_DGFfdE_NBpuyeJpK1U=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/toh5WPjJA0Obni0ThSP60Ma1ID8=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/wWJVY8HTCeBy4lxL5whjozBkPE8=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/merge-state" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/6Fjz4WuoAc2zh8qrKV0SvgfLlBM=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/9TkLWP+RppMQNyVBd_yqL56WyLA=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/BJx9+rEF9CQVCAzH1e1EaWm8IIQ=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/Hw0Capegj+Mbsyojhu_s0fClDPA=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/JnKVf9zISkuzrOBU63256YSAjh4=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/KyX05bix1OnL7WbLmIcYHfAlPqA=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/Mcdu+EjwrU9Ylx1ci0bnaqiJ8uM=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/g9SeduUsQ91fuxanJg0cVLR0XPo=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/k9roeL4vyP8g6nbIHgb2hg3drqw=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/lMzxkPMRzhXowOHnE7n73leJ9lI=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/sBtpLNgJ_DGFfdE_NBpuyeJpK1U=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/toh5WPjJA0Obni0ThSP60Ma1ID8=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/wWJVY8HTCeBy4lxL5whjozBkPE8=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
       <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/debug/zip-cache/839qQSa6CHFCxpfkdj4FzfZrhNk=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/debug/zip-cache/NM4bm0RKLBEHZtVesO6ZrkCIY04=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/res/debug/resources-debug.ap_" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/symbols/debug/R.txt" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/10.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/11.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/12.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/13.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/14.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/15.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/16.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/17.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/18.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/19.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/20.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/21.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/22.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/23.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/24.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/25.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/27.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/3.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/30.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/31.jar" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/31.jar" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/32.jar" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/32.jar" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/33.jar" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/33.jar" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/34.jar" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/34.jar" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/35.jar" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/35.jar" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/36.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/37.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/38.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/39.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/4.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/40.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/41.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/43.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/44.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/45.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/46.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/47.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/48.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/49.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/5.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/50.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/51.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/52.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/53.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/54.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/55.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/56.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/57.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/58.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/59.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/6.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/60.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$array.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$dimen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$menu.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$raw.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R$xml.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/google/blocks/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/WirelessP2p/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/WirelessP2p/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/WirelessP2p/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/WirelessP2p/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$array.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$dimen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$menu.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$raw.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R$xml.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftccommon/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$array.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$dimen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$menu.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$raw.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R$xml.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/ftcrobotcontroller/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$array.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$raw.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/hardware/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$array.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$raw.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/com/qualcomm/robotcore/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/BuildConfig.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$array.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$dimen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$menu.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$raw.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R$xml.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/ftc/teamcode/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$array.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$color.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$dimen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$menu.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$raw.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R$styleable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/61/org/firstinspires/inspection/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/7.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/8.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/9.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/79/org/firstinspires/ftc/teamcode/CarroOmnidireccional.dex" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/79/org/firstinspires/ftc/teamcode/CarroOmnidireccional.dex" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/79/org/firstinspires/ftc/teamcode/Prueba_LuisDaniel.dex" afterPath="" />
       <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexMerger/debug/0/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/mergeJavaRes/debug/0.jar" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libRobotCore.so" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libRobotCore.so" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/TeamCode/build/outputs/apk/debug/TeamCode-debug.apk" afterPath="$PROJECT_DIR$/TeamCode/build/outputs/apk/debug/TeamCode-debug.apk" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/TeamCode/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MotorTest1_SlowWhenButtonPressed.java" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MotorTest1_SlowWhenButtonPressed.java" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/CarrroOmnidireccional_1Joystick.java" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/CarrroOmnidireccional_1Joystick.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -368,8 +68,8 @@
       <file leaf-file-name="CarroOmnidireccional.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/CarroOmnidireccional.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="58" column="13" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="58" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -380,11 +80,21 @@
       <file leaf-file-name="CarrroOmnidireccional_1Joystick.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/CarrroOmnidireccional_1Joystick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="472">
+              <caret line="115" column="16" lean-forward="false" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicOpMode_Linear.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="91" column="69" lean-forward="false" selection-start-line="91" selection-start-column="69" selection-end-line="91" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -397,6 +107,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>potenciaY</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -3169,8 +2884,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="16" />
     <option name="width" value="1346" />
     <option name="height" value="728" />
   </component>
@@ -3198,6 +2911,24 @@
             <path>
               <item name="FGC_2018" type="1abcf292:AndroidViewProjectNode" />
               <item name="FtcRobotController" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="FGC_2018" type="1abcf292:AndroidViewProjectNode" />
+              <item name="FtcRobotController" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="FGC_2018" type="1abcf292:AndroidViewProjectNode" />
+              <item name="FtcRobotController" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="robotcontroller" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FGC_2018" type="1abcf292:AndroidViewProjectNode" />
+              <item name="FtcRobotController" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="robotcontroller" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="samples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FGC_2018" type="1abcf292:AndroidViewProjectNode" />
@@ -3401,7 +3132,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="0" width="1382" height="775" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3566,10 +3297,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="91" column="69" lean-forward="false" selection-start-line="91" selection-start-column="69" selection-end-line="91" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/CarroOmnidireccional.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="58" column="13" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="58" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3578,8 +3317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/CarrroOmnidireccional_1Joystick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="472">
+          <caret line="115" column="16" lean-forward="false" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
