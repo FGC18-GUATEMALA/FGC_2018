@@ -5,8 +5,8 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.Range;
-
 import java.util.concurrent.TimeUnit;
+
 
 @TeleOp(name = "CarrroOmnidireccional_1Joystick-Gabriel", group = "Omnidireccional")
 public class CarrroOmnidireccional_1Joystick extends LinearOpMode {
@@ -15,7 +15,7 @@ public class CarrroOmnidireccional_1Joystick extends LinearOpMode {
     private DcMotor motorX2;
     private DcMotor motorY1;
     private DcMotor motorY2;
-    private Servo servo;
+//    private Servo servo;
 
     @Override
     public void runOpMode(){
@@ -25,7 +25,7 @@ public class CarrroOmnidireccional_1Joystick extends LinearOpMode {
         motorY1 = hardwareMap.get(DcMotor.class, "motorY1");
         motorY2 = hardwareMap.get(DcMotor.class, "motorY2");
 
-        servo = hardwareMap.get(Servo.class, "servo");
+//        servo = hardwareMap.get(Servo.class, "servo");
 
         motorX1.setDirection(DcMotor.Direction.FORWARD);
         motorY1.setDirection(DcMotor.Direction.FORWARD);
@@ -33,8 +33,11 @@ public class CarrroOmnidireccional_1Joystick extends LinearOpMode {
         motorX2.setDirection(DcMotor.Direction.REVERSE);
         motorY2.setDirection(DcMotor.Direction.REVERSE);
 
-        servo.setPosition(0.3);
+//        servo.setPosition(0.3);
 
+        boolean rapido = false;
+
+        double poderGarra =0;
 
         waitForStart();
         while (opModeIsActive()){
@@ -44,7 +47,6 @@ public class CarrroOmnidireccional_1Joystick extends LinearOpMode {
             double leftPower = 0;
             double rightPower = 0;
 
-            double poderGarra =0;
 
             boolean botonA = false;
             boolean botonB = false;
@@ -56,7 +58,8 @@ public class CarrroOmnidireccional_1Joystick extends LinearOpMode {
 
             boolean botonCaballoR = gamepad2.dpad_right;
             boolean botonCaballoL = gamepad2.dpad_left;
-            long esperar = 1;
+
+            float R2, L2;
 
             botonY = gamepad1.y;
             botonX = gamepad1.x;
@@ -65,6 +68,9 @@ public class CarrroOmnidireccional_1Joystick extends LinearOpMode {
             bumberRight = gamepad1.right_bumper;
             bumberLeft = gamepad1.left_bumper;
 
+            R2 = gamepad1.right_trigger;
+            L2 = gamepad1.right_trigger;
+
             if (botonA){
                 rightPower = 1;
                 leftPower = 1;
@@ -72,49 +78,96 @@ public class CarrroOmnidireccional_1Joystick extends LinearOpMode {
             else if (botonB){
                 rightPower = -1;
                 leftPower = -1;
+
             }
             else if (bumberRight){
-                motorX1.setPower(0.5);
-                motorX2.setPower(-0.5);
+                motorX1.setPower(1);
+                motorX2.setPower(-1);
             }
             else if (bumberLeft){
-                motorX1.setPower(-0.5);
-                motorX2.setPower(0.5);
+                motorX1.setPower(-1);
+                motorX2.setPower(1);
             }
             else{
                 ejeX = gamepad1.left_stick_x;
                 ejeY = gamepad1.left_stick_y;
 
                 rightPower = Range.clip(ejeX + ejeY, -1, 1);
-                leftPower = Range.clip(ejeX - ejeY, -1, 1);
+                leftPower = Range.clip(ejeX -  ejeY, -1, 1);
 
                 rightPower = rightPower * -1;
             }
 
-            motorX1.setPower(rightPower * 0.3);
-            motorX2.setPower(rightPower * 0.3);
-            motorY1.setPower(leftPower * 0.3);
-            motorY2.setPower(leftPower * 0.3);
+            if (R2 > 1){
+                rapido = true;
+            }else if (L2 > 1){
+                rapido = false;
+            }
 
+            if (rapido){
+                motorX1.setPower(rightPower * .8);
+                motorX2.setPower(rightPower * .8);
+                motorY1.setPower(leftPower * .8);
+                motorY2.setPower(leftPower * .8);
+            }else if (!rapido){
+                motorX1.setPower(rightPower * .3);
+                motorX2.setPower(rightPower * .3);
+                motorY1.setPower(leftPower * .3);
+                motorY2.setPower(leftPower * .3);
+            }
+/*
             if (botonY){
-                servo.setPosition(1);
+                poderGarra = Range.clip(poderGarra + 0.2, 0, 1);
+                try {
+                    TimeUnit.MILLISECONDS.sleep(150);
+                }catch (InterruptedException e){
+                }
+
             }
             else if (botonX){
-                servo.setPosition(0);
-            }
-            else{
-                servo.setPosition(0.3);
+                poderGarra = Range.clip(poderGarra -0.2, 0, 1);
+
             }
 
+            servo.setPosition(poderGarra);
+*/
             if (botonCaballoR){
-                motorX2.setPower(0.5);
-                motorY2.setPower(0.5);
+
+                try {
+                    motorX2.setPower(-0.5);
+                    motorY2.setPower(0.5);
+                    motorX1.setPower(-0.5);
+                    motorY1.setPower(0.5);
+
+                    TimeUnit.MILLISECONDS.sleep(300);
+
+                    motorX1.setPower(0.5);
+                    motorX2.setPower(0.5);
+                    motorY1.setPower(0.5);
+                    motorY2.setPower(0.5);
+
+                    TimeUnit.MILLISECONDS.sleep(500);
+                }catch (InterruptedException e){
+                }
 
             }else if (botonCaballoL){
-                motorX1.setPower(0.5);
-                motorY1.setPower(0.5);
-                
+                try {
+                    motorX1.setPower(0.5);
+                    motorY1.setPower(-0.5);
+                    motorX2.setPower(0.5);
+                    motorY2.setPower(-0.5);
+
+                    TimeUnit.MILLISECONDS.sleep(300);
+                    motorX1.setPower(0.5);
+                    motorX2.setPower(0.5);
+                    motorY1.setPower(0.5);
+                    motorY2.setPower(0.5);
+
+                    TimeUnit.MILLISECONDS.sleep(500);
+                }catch (InterruptedException e){
+                }
             }
+
         }
     }
 }
