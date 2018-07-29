@@ -1,4 +1,4 @@
-#Sat Jul 28 17:08:53 CST 2018
+#Sun Jul 29 15:58:27 CST 2018
 base.0=C\:\\FGC GIT\\FGC_2018\\TeamCode\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

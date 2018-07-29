@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Jul 28 17:08:55 CST 2018
+#Sun Jul 29 15:58:30 CST 2018
 20.base=C\:\\FGC GIT\\FGC_2018\\TeamCode\\build\\intermediates\\assets\\debug
 143.base=C\:\\FGC GIT\\FGC_2018\\TeamCode\\build\\intermediates\\assets\\debug
 237.path=java/css/jquery.contextmenu.css
