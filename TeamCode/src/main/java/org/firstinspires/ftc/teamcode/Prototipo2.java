@@ -54,7 +54,7 @@ public class Prototipo2 extends LinearOpMode {
         apretarGarra.setDirection(CRServo.Direction.FORWARD);
 
         double ejex, ejey, fuerzaRotacion, ajusteVelocidad = 1, power = 1;
-        int posicion2, rotacion2;
+        int posicion2, rotacion2, posicionRotacionNueva = 0;
         boolean r1, l1, a, b, up, down, eleGarra, bajaGarra, apreGarra, solGarra, eol, lento = true, rapido = false, y;
 
         waitForStart();
@@ -84,19 +84,24 @@ public class Prototipo2 extends LinearOpMode {
             b = gamepad1.b; //Revertit succion
             y = gamepad1.y; //Parar succion
 
-            fuerzaRotacion= gamepad2.right_stick_y; //Activar la rotacion de la succion
-            fuerzaRotacion = fuerzaRotacion * 100; //Volver el valor a un rango de 100
-            rotacion2 = (int) fuerzaRotacion; //Volver el valor double a integer
+            boolean rotarAtras = gamepad1.dpad_left;
+            boolean rotarAdelante = gamepad1.dpad_right;
 
             int posicionRotacion = rotacion.getCurrentPosition(); //Obtener posicion de la succion
-            int posicionElevador = elevador.getCurrentPosition(); //Obtener posicion del elevador
 
-            //Aumentar la posicion de la succion con el Joystick
-            int posicionRotacionNueva = posicionRotacion + rotacion2;
+            if (rotarAtras){
+                posicionRotacionNueva = posicionRotacion - 50;
+            }
+            if (rotarAdelante){
+                posicionRotacionNueva = posicionRotacion + 50;
+            }
 
             elevador.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
             elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
             elevador.setPower(power); //Mandar el motor a la posicion con cierta fuerza
+
+            int posicionElevador = elevador.getCurrentPosition(); //Obtener posicion del elevador
+
 
             up = gamepad2.dpad_up; //Elevador hacia arriba
             down = gamepad2.dpad_down; //Elevador hacia abajo
