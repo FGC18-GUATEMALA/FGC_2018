@@ -15,14 +15,21 @@ public class PruebaRotacion extends LinearOpMode {
         rotacion.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         rotacion.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
+        int nuevaPosicion = 0 ;
+
         waitForStart();
         while (opModeIsActive()){
-            double rotar = gamepad1.right_stick_y;
-            rotar = rotar * 100;
-            int rotar2 = (int) rotar;
+            boolean rotarAtras = gamepad1.dpad_left;
+            boolean rotarAdelante = gamepad1.dpad_right;
 
             int posicion = rotacion.getCurrentPosition();
-            int nuevaPosicion = posicion + rotar2;
+
+            if (rotarAtras){
+                nuevaPosicion = posicion - 50;
+            }
+            if (rotarAdelante){
+                nuevaPosicion = posicion + 50;
+            }
 
             rotacion.setTargetPosition(nuevaPosicion);
             rotacion.setMode(DcMotor.RunMode.RUN_TO_POSITION);
