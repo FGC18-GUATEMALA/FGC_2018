@@ -1,10 +1,9 @@
-package org.firstinspires.ftc.teamcode;
+ package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.hardware.AnalogInput;
-import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.util.Range;
+        import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+        import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+        import com.qualcomm.robotcore.hardware.AnalogInput;
+        import com.qualcomm.robotcore.hardware.DcMotor;
 
 @Autonomous(name = "ElevadorPotenciometro")
 public class PruebaElevadorPotenciometro extends LinearOpMode {
@@ -29,15 +28,16 @@ public class PruebaElevadorPotenciometro extends LinearOpMode {
 
         waitForStart();
 
+
         while (opModeIsActive()){
-//0 - 290
+//0 - 290 posicion para 360 de la llanta
             lectura = poten.getVoltage();
 
-            double rangeLectura = Math.round(lectura * 100/3.352);
+            double rangeLectura = Math.round(lectura * 100/3.352); //volver valor del potenciometro a rango de 0 a 100
 
-            int rangeLectura2 = (int)rangeLectura;
+            int rangeLectura2 = (int)rangeLectura; //volver el rango a int
 
-            int stepperPosicion = Math.round(rangeLectura2 * 290 / 100);
+            int stepperPosicion = Math.round(rangeLectura2 * 290 / 100); //Volver el rango2 a la posicion de la llanta
 
             stepperLectura = stepper.getCurrentPosition();
 
@@ -56,4 +56,4 @@ public class PruebaElevadorPotenciometro extends LinearOpMode {
     public void inclinacionAabajo(double power){
     }
 
-}
+} 

@@ -13,12 +13,11 @@ public class MovEleSuc20180728 extends LinearOpMode {
 
     private DcMotor motorF1, motorF2;
     private DcMotor motorR1, motorR2;
-    private DcMotor elevador1, elevador2;
-    private DcMotor motorRight, motorLeft;
-    private CRServo rotacionRight, rotacionLeft, elevacionGarra, eolica, apretarGarra;
+    private DcMotor elevador;
+    private DcMotor motorRight, motorLeft, rotacion;
+    private CRServo elevacionGarra, eolica, apretarGarra;
 
     public boolean succion = false;
-    public boolean elevador = false;
     public double ejexFinal = 0, ejeyFinal = 0;
     public int cont = 0;
 
@@ -40,15 +39,13 @@ public class MovEleSuc20180728 extends LinearOpMode {
         motorR1.setDirection(DcMotor.Direction.FORWARD);
         motorR2.setDirection(DcMotor.Direction.REVERSE);
 
-        elevador1 = hardwareMap.get(DcMotor.class, "elevador1");
-        elevador2 = hardwareMap.get(DcMotor.class, "elevador2");
-        elevador1.setDirection(DcMotor.Direction.REVERSE);
-        elevador2.setDirection(DcMotor.Direction.FORWARD);
+        elevador = hardwareMap.get(DcMotor.class, "elevador");
+        elevador.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        elevador.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-        rotacionLeft = hardwareMap.get(CRServo.class, "rotacionLeft");
-        rotacionRight = hardwareMap.get(CRServo.class, "rotacionRight");
-        rotacionLeft.setDirection(CRServo.Direction.FORWARD);
-        rotacionRight.setDirection(CRServo.Direction.REVERSE);
+        rotacion = hardwareMap.get(DcMotor.class, "rotacion");
+        rotacion.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        rotacion.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
         elevacionGarra = hardwareMap.get(CRServo.class, "elevacionGarra");
         elevacionGarra.setDirection(CRServo.Direction.FORWARD); //PENDIENTE
@@ -57,7 +54,8 @@ public class MovEleSuc20180728 extends LinearOpMode {
         apretarGarra = hardwareMap.get(CRServo.class, "apretarGarra");
         apretarGarra.setDirection(CRServo.Direction.FORWARD); //PENDIENTE
 
-        double ejex, ejey, left, right, rotacion, rotacionFinal, ajusteVelocidad = 1;
+        double ejex, ejey, fuerzaRotacion, ajusteVelocidad = 1, power = 1;
+        int posicion2, rotacion2;
         boolean r1, l1, a, b, up, down, eleGarra, bajaGarra, apreGarra, solGarra, eol, lento = true, rapido = false;
 
         waitForStart();
@@ -91,14 +89,19 @@ public class MovEleSuc20180728 extends LinearOpMode {
             a = gamepad1.a;
             b = gamepad1.b;
             y = gamepad1.y;
-            left = gamepad2.left_trigger;
-            right = gamepad2.right_trigger;
-            rotacion = gamepad2.right_stick_y;
-            rotacion = rotacion *-1;
 
-            rotacionFinal = Range.clip(rotacion *-1, -0.5, 0.5);
-            rotacionRight.setPower(rotacionFinal);
-            rotacionLeft.setPower(rotacionFinal);
+            fuerzaRotacion= gamepad2.right_stick_y;
+            fuerzaRotacion = fuerzaRotacion * 100;
+            rotacion2 = (int) fuerzaRotacion;
+
+            int posicionRotacion = rotacion.getCurrentPosition();
+            int posicionElevador = elevador.getCurrentPosition();
+
+            int posicionRotacionNueva = posicionRotacion + rotacion2;
+
+            elevador.setTargetPosition(posicionRotacionNueva);
+            elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+            elevador.setPower(power);
 
             up = gamepad2.dpad_up;
             down = gamepad2.dpad_down;
@@ -156,21 +159,16 @@ public class MovEleSuc20180728 extends LinearOpMode {
 
             //Elevador
             if (up){
-                elevador1.setPower(0.8);
-                elevador2.setPower(0.8);
+                posicion2 = posicionElevador + 80;
+                elevador.setTargetPosition(posicion2);
+                elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+                elevador.setPower(power);
             }
             else if(down){
-                elevador1.setPower(-0.4);
-                elevador2.setPower(-0.4);
-            }else{
-                elevador1.setPower(0);
-                elevador2.setPower(0);
-            }
-            if (left > 0.2){
-                elevador2.setPower(0.8);
-            }
-            if (right > 0.2){
-                elevador1.setPower(0.8);
+                posicion2 = posicionElevador - 80;
+                elevador.setTargetPosition(posicion2);
+                elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+                elevador.setPower(power);
             }
 
             //Funcion de las herramientas
