@@ -1,5 +1,7 @@
 package org.firstinspires.ftc.teamcode;
 
+import android.text.format.Time;
+
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.CRServo;
@@ -18,7 +20,7 @@ public class Prototipo2 extends LinearOpMode {
     private CRServo elevacionGarra, eolica, apretarGarra;
 
     public double ejexFinal = 0, ejeyFinal = 0;
-    public int cont = 0;
+    public int cont = 0, posicionRotacionNueva = 0;
 
     public void runOpMode(){
 
@@ -38,9 +40,7 @@ public class Prototipo2 extends LinearOpMode {
         motorR1.setDirection(DcMotor.Direction.FORWARD);
         motorR2.setDirection(DcMotor.Direction.REVERSE);
 
-        elevador = hardwareMap.get(DcMotor.class, "elevador"); //Parar motor Elevador y setear encoders
-        elevador.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        elevador.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        elevador = hardwareMap.get(DcMotor.class, "elevador");
 
         rotacion = hardwareMap.get(DcMotor.class, "rotacion"); //Parar motor Rotacion y setear encoders
         rotacion.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
@@ -53,8 +53,8 @@ public class Prototipo2 extends LinearOpMode {
         apretarGarra = hardwareMap.get(CRServo.class, "apretarGarra"); //Servo para apretar la garra
         apretarGarra.setDirection(CRServo.Direction.FORWARD);
 
-        double ejex, ejey, fuerzaRotacion, ajusteVelocidad = 1, power = 1;
-        int posicion2, rotacion2, posicionRotacionNueva = 0;
+        double ejex, ejey, fuerzaRotacion, ajusteVelocidad = 1, power = 1, range = 0.6;
+        int posicion2, rotacion2;
         boolean r1, l1, a, b, up, down, eleGarra, bajaGarra, apreGarra, solGarra, eol, lento = true, rapido = false, y;
 
         waitForStart();
@@ -84,44 +84,73 @@ public class Prototipo2 extends LinearOpMode {
             b = gamepad1.b; //Revertit succion
             y = gamepad1.y; //Parar succion
 
-            boolean rotarAtras = gamepad1.dpad_left;
-            boolean rotarAdelante = gamepad1.dpad_right;
+            boolean rotarAtras = gamepad2.dpad_left;
+            boolean rotarAdelante = gamepad2.dpad_right;
 
             int posicionRotacion = rotacion.getCurrentPosition(); //Obtener posicion de la succion
 
             if (rotarAtras){
-                posicionRotacionNueva = posicionRotacion - 50;
+                try {
+                    posicionRotacionNueva = 50;
+                    rotacion.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
+                    rotacion.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
+                    rotacion.setPower(0.2); //Mandar el motor a la posicion con cierta fuerza
+                    while(rotacion.isBusy()){
+                    }
+                    TimeUnit.MILLISECONDS.sleep(300);
+                    posicionRotacionNueva = 0;
+                    rotacion.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
+                    rotacion.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
+                    rotacion.setPower(0.2); //Mandar el motor a la posicion con cierta fuerza
+                    while(rotacion.isBusy()){
+                    }
+                    TimeUnit.MILLISECONDS.sleep(100);
+                }catch (InterruptedException e){
+                }
             }
             if (rotarAdelante){
-                posicionRotacionNueva = posicionRotacion + 50;
+                posicionRotacionNueva = 40;
+                rotacion.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
+                rotacion.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
+                rotacion.setPower(1); //Mandar el motor a la posicion con cierta fuerza
+                while(rotacion.isBusy()){
+                }
+                posicionRotacionNueva = 50;
+                rotacion.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
+                rotacion.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
+                rotacion.setPower(0.3); //Mandar el motor a la posicion con cierta fuerza
+                while(rotacion.isBusy()){
+                }
+                posicionRotacionNueva = 120;
+                rotacion.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
+                rotacion.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
+                rotacion.setPower(0.2); //Mandar el motor a la posicion con cierta fuerza
             }
 
-            elevador.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
-            elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
-            elevador.setPower(power); //Mandar el motor a la posicion con cierta fuerza
+            rotacion.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
+            rotacion.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
+            rotacion.setPower(0.8); //Mandar el motor a la posicion con cierta fuerza
 
             int posicionElevador = elevador.getCurrentPosition(); //Obtener posicion del elevador
-
 
             up = gamepad2.dpad_up; //Elevador hacia arriba
             down = gamepad2.dpad_down; //Elevador hacia abajo
 
-
             /* Al momento de que quiera ir rapido el ajuste de velocidad se aumenta el cual se usa para
              * controlar la velocidad de giro, se aumenta el rango de los valores que se mandan a los
              * motores de movimiento. Cuando se quiere ir lento el ajuste de velocidad y el rango de los
-             * valores se disminuye para mejor precision*/
+             * valores se disminuye para mejor precision */
 
             if(rapido){
                 ajusteVelocidad = 1.8; //velocidad con la que girara el robot
-                ejexFinal = Range.clip(ejex , -1, 1); //rango para el movimiento en X
-                ejeyFinal = Range.clip(ejey, -1, 1); //rango para el movimiento en Y
+                range = 1;
             }
             if(lento){
                 ajusteVelocidad = 1.0;
-                ejexFinal = Range.clip(ejex, -0.6, 0.6);
-                ejeyFinal = Range.clip(ejey, -0.6, 0.6);
+                range = 0.4;
             }
+            ejexFinal = Range.clip(ejex, range * -1, range);
+            ejeyFinal = Range.clip(ejey, range * -1, range);
 
             l1 = gamepad1.left_bumper; //Girar hacia la izquierda
             r1 = gamepad1.right_bumper; //Girar hacia la derecha
@@ -164,16 +193,10 @@ public class Prototipo2 extends LinearOpMode {
 
             //Elevador hacia arriba con Encoder
             if (up){
-                posicion2 = posicionElevador + 80; //determinar la siguiente posicion deseada
-                elevador.setTargetPosition(posicion2); //setear el target
-                elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandarlo a la posicion
-                elevador.setPower(power); //Ponerle la fuerza para que realice la accion
+                elevador.setPower(1);
             }
             else if(down){
-                posicion2 = posicionElevador - 80;
-                elevador.setTargetPosition(posicion2);
-                elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-                elevador.setPower(power);
+                elevador.setPower(-1);
             }
 
             //Apretar la garra
