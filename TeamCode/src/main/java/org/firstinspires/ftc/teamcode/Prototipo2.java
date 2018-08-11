@@ -20,7 +20,7 @@ public class Prototipo2 extends LinearOpMode {
     private CRServo elevacionGarra, eolica, apretarGarra;
 
     public double ejexFinal = 0, ejeyFinal = 0;
-    public int cont = 0, posicionRotacionNueva = 0;
+    public int cont = 0, posicionRotacionNueva = 0, posicion2 = 0;
 
     public void runOpMode(){
 
@@ -41,6 +41,8 @@ public class Prototipo2 extends LinearOpMode {
         motorR2.setDirection(DcMotor.Direction.REVERSE);
 
         elevador = hardwareMap.get(DcMotor.class, "elevador");
+        elevador.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        elevador.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
         rotacion = hardwareMap.get(DcMotor.class, "rotacion"); //Parar motor Rotacion y setear encoders
         rotacion.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
@@ -54,7 +56,7 @@ public class Prototipo2 extends LinearOpMode {
         apretarGarra.setDirection(CRServo.Direction.FORWARD);
 
         double ejex, ejey, fuerzaRotacion, ajusteVelocidad = 1, power = 1, range = 0.6;
-        int posicion2, rotacion2;
+        int rotacion2;
         boolean r1, l1, a, b, up, down, eleGarra, bajaGarra, apreGarra, solGarra, eol, lento = true, rapido = false, y;
 
         waitForStart();
@@ -97,7 +99,7 @@ public class Prototipo2 extends LinearOpMode {
                     rotacion.setPower(0.2); //Mandar el motor a la posicion con cierta fuerza
                     while(rotacion.isBusy()){
                     }
-                    TimeUnit.MILLISECONDS.sleep(300);
+                    TimeUnit.MILLISECONDS.sleep(100);
                     posicionRotacionNueva = 0;
                     rotacion.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
                     rotacion.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
@@ -121,7 +123,7 @@ public class Prototipo2 extends LinearOpMode {
                 rotacion.setPower(0.3); //Mandar el motor a la posicion con cierta fuerza
                 while(rotacion.isBusy()){
                 }
-                posicionRotacionNueva = 120;
+                posicionRotacionNueva = 100;
                 rotacion.setTargetPosition(posicionRotacionNueva); //Set target para la nueva posicion
                 rotacion.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
                 rotacion.setPower(0.2); //Mandar el motor a la posicion con cierta fuerza
@@ -193,17 +195,28 @@ public class Prototipo2 extends LinearOpMode {
 
             //Elevador hacia arriba con Encoder
             if (up){
-                elevador.setPower(1);
+                posicion2 = 50; //determinar la siguiente posicion deseada
+                elevador.setTargetPosition(posicion2); //setear el target
+                elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandarlo a la posicion
+                elevador.setPower(power); //Ponerle la fuerza para que realice la accion
             }
             else if(down){
-                elevador.setPower(-1);
+                posicion2 = 0;
+                elevador.setTargetPosition(posicion2);
+                elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+                elevador.setPower(power);
             }
+            elevador.setTargetPosition(posicion2); //Set target para la nueva posicion
+            elevador.setMode(DcMotor.RunMode.RUN_TO_POSITION); //Mandar el motor a la posicion
+            elevador.setPower(power); //Mandar el motor a la posicion con cierta fuerza
+
 
             //Apretar la garra
             if (apreGarra){
                 apretarGarra.setPower(0.5);
             }
             //Soltar la garra
+
             else if(solGarra){
                 apretarGarra.setPower(-0.5);
             }
@@ -225,6 +238,10 @@ public class Prototipo2 extends LinearOpMode {
             }else{
                 elevacionGarra.setPower(0);
             }
+
+            int posicionElevadorrr = elevador.getCurrentPosition();
+            telemetry.addData("Elevador", "" + posicionElevadorrr);
+            telemetry.update();
 
         }
     }
